@@ -1,0 +1,11 @@
+--- origsrc/bareftp-0.3.9/src/bareFTP/Makefile.am	2010-10-15 12:54:08.000000000 -0500
++++ src/bareftp-0.3.9/src/bareFTP/Makefile.am	2011-09-26 19:02:31.942190800 -0500
+@@ -25,7 +25,7 @@ SATELLITE_ASSEMBLY_NAME=.resources.dll
+ BINARIES = \
+ 	$(BAREFTP)  
+ 	
+-all: $(ASSEMBLY) $(PROGRAMFILES) $(BINARIES) 
++all: $(ASSEMBLY) $(BINARIES) 
+ 
+ FILES = \
+ 	gtk-gui/generated.cs \

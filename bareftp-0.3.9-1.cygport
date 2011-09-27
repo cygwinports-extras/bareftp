@@ -1,0 +1,15 @@
+inherit gnome2
+
+DESCRIPTION="Gtk# FTP/FTPS/SFTP client"
+HOMEPAGE="http://www.bareftp.org/"
+SRC_URI="http://www.bareftp.org/release/${P}.tar.gz"
+
+PATCH_URI="
+	0.3.9-cygwin.patch
+	0.3.9-no-undefined.patch
+	0.3.9-make.patch
+"
+
+DIFF_EXCLUDES="Defines.cs"
+
+ACLOCAL_FLAGS="-I m4/bareftp -I m4/shamrock"

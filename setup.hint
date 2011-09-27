@@ -1,0 +1,6 @@
+category: Net
+requires: libglib2.0_0 mono mono-gconf-sharp2.0 mono-glib-sharp2.0 mono-Gnome-Keyring1.0 mono-gnome-sharp2.24 mono-gnome-vfs-sharp2.0 mono-gtk-sharp2.0
+sdesc: "Gtk# FTP/FTPS/SFTP client"
+ldesc: "bareFTP is a file transfer client supporting the FTP, FTP over 
+SSL/TLS (FTPS) and SSH File Transfer Protocol (SFTP). It is written in 
+C#, targeting the Mono framework and the GNOME desktop environment."

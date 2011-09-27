@@ -1,0 +1,10 @@
+--- origsrc/bareftp-0.3.9/lib/sftppty/Makefile.am	2010-10-15 12:54:08.000000000 -0500
++++ src/bareftp-0.3.9/lib/sftppty/Makefile.am	2011-09-26 18:58:52.793478700 -0500
+@@ -5,5 +5,5 @@ sftppty_LTLIBRARIES = libsftppty.la
+ libsftppty_la_SOURCES = pty.c pty.h
+ 
+ libsftppty_la_CFLAGS = $(GLIB_CFLAGS)
+-libsftppty_la_LDFLAGS = -export-dynamic -module -avoid-version
+-libsftppty_la_LIBADD = $(GLIB_LDADD)
++libsftppty_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++libsftppty_la_LIBADD = $(GLIB_LIBS)

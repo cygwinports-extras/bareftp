@@ -1,0 +1,24 @@
+--- origsrc/bareftp-0.3.9/lib/bareFTP.SftpPty/PseudoTerminal.cs	2010-10-15 12:54:08.000000000 -0500
++++ src/bareftp-0.3.9/lib/bareFTP.SftpPty/PseudoTerminal.cs	2011-09-26 18:49:14.782942000 -0500
+@@ -16,7 +16,7 @@ namespace bareFTP.SftpPty {
+ 
+ 	public class PseudoTerminal : IDisposable {
+ 		
+-		[DllImport ("libsftppty.so")]
++		[DllImport ("sftppty")]
+ 		extern static int _pty_sharp_open (out int pid_t_child,
+ 						 out int slave_fd,
+ 						 string [] env_add,
+@@ -24,10 +24,10 @@ namespace bareFTP.SftpPty {
+ 						 string [] argv,
+ 						 string directory);
+ 
+-		[DllImport ("libsftppty.so")]
++		[DllImport ("sftppty")]
+ 		extern static void _pty_sharp_set_utf8 (int pty, int utf8);
+ 		
+-		[DllImport ("libsftppty.so")]
++		[DllImport ("sftppty")]
+ 		extern static int _bareftp_get_ready_fd (int fd_console, int fd_data, bool retry);
+ 
+ 		int fd;
